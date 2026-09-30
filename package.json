@@ -1,0 +1,26 @@
+{
+  "name": "@asteroidbook/quiz-engine-js",
+  "version": "1.0.0",
+  "description": "A lightweight JavaScript library to build interactive quizzes.",
+  "main": "dist/quiz-engine.cjs.js",
+  "module": "dist/quiz-engine.esm.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/quiz-engine.esm.js",
+      "require": "./dist/quiz-engine.cjs.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.0.0"
+  },
+  "license": "MIT"
+}
